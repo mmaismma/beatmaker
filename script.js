@@ -5,10 +5,11 @@ for (i = 0; i < tileArray.length; i++) {
 }
 let a;
 function play(x) {
-    console.log(x);
     let audio = new Audio(`Resources/Beats/0_${x}.flac`)
     audio.play();
-    //console.log(audioNumber);
-    //console.log(tileArray[x]);
-    //console.log(x);
+    setInterval(() => {
+        let playbackPercent = audio.currentTime * 100 / audio.duration;
+        let bgColor = getComputedStyle(document.getElementsByClassName(x)[0]).background;
+        document.getElementsByClassName(x)[0].style.background = `linear-gradient(to right, transparent ${playbackPercent - 20}%, #fff ${playbackPercent}%, transparent ${playbackPercent}%), ${bgColor}`;
+    } , 50)
 }
