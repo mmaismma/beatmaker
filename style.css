@@ -73,25 +73,25 @@ html {
 }
 
 .tile {
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
+    width: 11.5vmin;
+    height: 11.5vmin;
+    border-radius: 3vmin;
     display: grid;
     grid-template-rows: 2fr 1fr;
     justify-content: center;
     justify-items: center;
     align-items: center;
     color: #0e0e0e;
-    font-size: 30px;
+    font-size: 2.3vmin;
     padding: 10px;
     box-sizing: border-box;
     cursor: pointer;
 }
 
 .icon {
-    width: 65px;
-    height: 65px;
-    border-width: 7px;
+    width: 4vmin;
+    height: 4vmin;
+    border-width: 0.5vmin;
     border-radius: 50%;
     border-style: dashed;
 }
