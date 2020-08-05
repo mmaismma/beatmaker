@@ -1,0 +1,11 @@
+{
+    "name": "Beatmaker by MMA",
+    "short_name": "Beatmaker",
+    "start_url": ".",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "background_color": "#020202",
+    "theme_color": "#020202",
+    "description": "Easy beat/music maker.",
+    "scope": "."
+}
