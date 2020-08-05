@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:wght@400;900&display=swap');
+
 html {
     background: #0e0e0e;
     height: 100%;
@@ -21,6 +23,42 @@ html {
     --dullGreen: #222804;
     --dullCyan: #02201e;
     --dullPink: #2b0713;
+}
+
+#adOverlay {
+    background: #000a;
+    backdrop-filter: saturate(180%) blur(20px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#adBox {
+    border-radius: 20px;
+    border: 1px solid var(--sharpYellow);
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+#adSkip {
+    color: var(--sharpYellow);
+    border: 2px solid;
+    background: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+#adSkip:hover, #adBox a:hover {
+    background: var(--sharpYellow);
+    color: #000!important;
+    cursor: pointer;
 }
 
 #main {
