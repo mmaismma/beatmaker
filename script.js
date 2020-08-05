@@ -35,52 +35,28 @@ for (i = 0; i < tileArray.length; i++) {
 function play(x) {
     let element = document.getElementsByClassName(x)[0];
 
-    let beat = window[`beat${x}`];
+    let beat = eval("beat" + x);
+    // Try eliminating eval with Function
     beat.play();
 
-    if (element.classList[3] === 'active') {
-
-    } else {
-        element.classList.add('active');
-    }
-    /*const interval = setInterval(() => {
-        //console.log(audio.currentTime + ' of' + ' ' + audio.duration);
-        if (audio.currentTime === audio.duration) {
-            document.getElementsByClassName(x)[0].classList.remove('active');
-            audio.pause;
-            audio.currentTime = 0;
-            removeInterval();
-        }
-    }, 1000)
+    let interval;
 
     function removeInterval() {
+        element.classList.remove('active');
+        beat.pause();
+        beat.currentTime = 0;
         clearInterval(interval);
-    }*/
-}
+    }
 
-/*function play(x) {
-    let audio = new Audio(`Resources/Beats/0_${x}.flac`)
-    if (document.getElementsByClassName(x)[0].classList[3] === 'active') {
-        document.getElementsByClassName(x)[0].classList.remove('active');
-        audio.pause;
-        audio.currentTime = 0;
-        //clearInterval(interval);
+    if (element.classList[3] === 'active') {
+        removeInterval();
     } else {
-        audio.play();
-
-        document.getElementsByClassName(x)[0].classList.add('active');
-        const interval = setInterval(() => {
+        element.classList.add('active');
+        interval = setInterval(() => {
             //console.log(audio.currentTime + ' of' + ' ' + audio.duration);
-            if (audio.currentTime === audio.duration) {
-                document.getElementsByClassName(x)[0].classList.remove('active');
-                audio.pause;
-                audio.currentTime = 0;
+            if (beat.currentTime === beat.duration) {
                 removeInterval();
             }
         }, 1000)
-
-        function removeInterval() {
-            clearInterval(interval);
-        }
     }
-}*/
+}
