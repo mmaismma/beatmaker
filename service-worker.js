@@ -1,11 +1,11 @@
 self.addEventListener("install", function (event) {
-  skipWaiting();
+  //skipWaiting();
   event.waitUntil(
     caches.open("mmaismma/beatmaker").then(function(cache) {
       return cache.addAll([
         "./style.css",
         "./script.js",
-        "./index.html",
+        //"./index.html",
         "../Resources/Beats/0_01.flac",
         "../Resources/Beats/0_02.flac",
         "../Resources/Beats/0_04.flac",
