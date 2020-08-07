@@ -60,3 +60,37 @@ function play(x) {
         }, 1000)
     }
 }
+
+document.getElementById('shareButton').addEventListener("click", async () => {
+    try {
+        await navigator.share({
+            title: "Beatmaker by MMA",
+            url: ""
+        });
+        console.log("Data was shared successfully");
+    } catch (err) {
+        console.error("Share failed:", err.message);
+    }
+});
+
+let installPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    document.getElementById('installButton').style.display = 'unset';
+    installPrompt = e;
+});
+
+document.getElementById('installButton').addEventListener('click', () => {
+    installPrompt.prompt();
+})
+
+window.addEventListener('appinstalled', () => {
+    confetti.start();
+    setTimeout(() => {
+        confetti.stop();
+    }, 1000)
+})
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}

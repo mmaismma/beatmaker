@@ -8,6 +8,9 @@
     <meta name="keywords" content="beatmaker, html, css, javascript, js, sounds, free, open-source, beat, music">
     <meta name="author" content="mmaismma">
     <meta name="viewport" content="user-scalable=no">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" type="image/png" href="Resources/Icons/Beatmaker icon 512x512.png">
+    <link rel="apple-touch-icon" href="Resources/Icons/Beatmaker icon 512x512.png">
 </head>
 <body>
     <div id="adOverlay"><div id="adBox">
@@ -15,8 +18,10 @@
             <span style="font-family: 'Roboto';font-size: 20px;">(by MMA)!</span></h1>
         <span>
             Making good beats here is a kid's play. Just tap on the pad lad!<br>(#IAmTheNewRapGod)<br><br>
-            This project is open-source, feel free to contribute on <a style="color: var(--sharpYellow);text-decoration: none;" href="https://github.com/mmaismma/beatmaker">GitHub</a>.
+            This project is open-source, feel free to contribute on <a target="blank_" style="color: var(--sharpYellow);text-decoration: none;" href="https://github.com/mmaismma/beatmaker">GitHub</a>.
         </span><br><br>
+        <button id="shareButton">SHARE</button>
+        <button id="installButton" style="display: none;">INSTALL APP</button><br><br>
         <button id="adSkip" onclick="javascript: document.getElementById('adOverlay').style.display = 'none';">CONTINUE</button>
     </div></div>
     <div id="main">
@@ -117,5 +122,6 @@
             <div class="title">Burn</div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
     <script src="script.js"></script>
 </body>
