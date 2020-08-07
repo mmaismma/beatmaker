@@ -10,13 +10,13 @@
     "scope": ".",
     "icons": [
         {
-        "src": "/Resources/Icons/Beatmaker icon 512x512.png",
+        "src": "/beatmaker/Resources/Icons/Beatmaker icon 512x512.png",
         "type": "image/png",
         "purpose": "any",
         "sizes": "512x512"
         },
         {
-            "src": "/Resources/Icons/Beatmaker icon 144x144.png",
+            "src": "/beatmaker/Resources/Icons/Beatmaker icon 144x144.png",
             "type": "image/png",
             "purpose": "any",
             "sizes": "144x144"
