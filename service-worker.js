@@ -1,4 +1,5 @@
 self.addEventListener("install", function (event) {
+  skipWaiting();
   event.waitUntil(
     caches.open("mmaismma/beatmaker").then(function(cache) {
       return cache.addAll([
