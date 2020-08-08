@@ -37,7 +37,7 @@ self.addEventListener("install", function (event) {
 });
 
 self.addEventListener("activate", event => {
-  event.waitUntil(
+  /*event.waitUntil(
     caches.keys().then(function (cacheNames) {
       return Promise.all(
         cacheNames.filter(function (cacheName) {
@@ -47,7 +47,7 @@ self.addEventListener("activate", event => {
         })
       );
     })
-  );
+  );*/
   console.log("Inside the activate handler:", event);
 });
 
