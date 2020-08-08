@@ -37,9 +37,30 @@ self.addEventListener("install", function (event) {
 });
 
 self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys().then(function (cacheNames) {
+      return Promise.all(
+        cacheNames.filter(function (cacheName) {
+          return true;
+        }).map(function (cacheName) {
+          return caches.delete(cacheName);
+        })
+      );
+    })
+  );
   console.log("Inside the activate handler:", event);
 });
 
 self.addEventListener("fetch", event => {
+  event.respondWith(
+    caches.open('mmaismma/beatmaker-fetch').then(function (cache) {
+      return cache.match(event.request).then(function (response) {
+        return response || fetch(event.request).then(function (response) {
+          cache.put(event.request, response.clone());
+          return response;
+        });
+      });
+    })
+  );
   console.log("Inside the fetch handler:", event);
 });
