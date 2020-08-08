@@ -155,7 +155,7 @@ body {
 
 .green>.icon,
 .green>.title {
-    background: repeating-radial-gradient(var(--sharpGreen), transparent 10%);
+    background: repeating-radial-gradient(var(--sharpGreen), var(--sharpGreen) 5px, transparent 5px, transparent 10px);
     border: none;
     color: var(--sharpGreen);
 }
