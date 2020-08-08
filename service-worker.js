@@ -5,7 +5,7 @@ self.addEventListener("install", function (event) {
       return cache.addAll([
         "./style.css",
         "./script.js",
-        //"./index.html",
+        "./index.html",
         "/beatmaker/Resources/Beats/0_01.flac",
         "/beatmaker/Resources/Beats/0_02.flac",
         "/beatmaker/Resources/Beats/0_04.flac",
