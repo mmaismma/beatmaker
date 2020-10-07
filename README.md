@@ -22,7 +22,7 @@ Section Color | Music Genre
 --- | ---
 Red | Regular Beats
 Yellow | Rock
-Cyan | Sad
+Cyan | Mystical
 Orange | Sound effects
-Green | Misc.
+Green | Miscellaneous
 Pink | Lyrical
