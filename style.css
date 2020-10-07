@@ -11,24 +11,23 @@ html {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     user-select: none;
-    --sharpRed: #cc303b;
-    --sharpYellow: #fd9210;
-    --sharpOrange: #f25820;
-    --sharpGreen: #a1c313;
-    --sharpCyan: #0da192;
-    --sharpPink: #d41c60;
-    --dullRed: #28010c;
-    --dullYellow: #331e03;
-    --dullOrange: #301207;
-    --dullGreen: #222804;
-    --dullCyan: #02201e;
-    --dullPink: #2b0713;
+    --sharpRed: #ca2f3a;
+    --sharpYellow: #ff930f;
+    --sharpOrange: #ff5314;
+    --sharpGreen: #abd600;
+    --sharpCyan: #00ad9c;
+    --sharpPink: #f00058;
+    --dullRed: #29000c;
+    --dullYellow: #382000;
+    --dullOrange: #380f00;
+    --dullGreen: #262e00;
+    --dullCyan: #002421;
+    --dullPink: #330011;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-content: center;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -72,14 +71,11 @@ body {
 }
 
 #main {
-    width: 80%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    border-spacing: 5px;
+    border: none;
+    table-layout: fixed;
 }
 
 .tile {

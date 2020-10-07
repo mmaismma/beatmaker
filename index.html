@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <title>Beatmaker by MMA</title>
     <link rel="stylesheet" href="style.css">
@@ -13,116 +14,182 @@
     <link rel="icon" type="image/png" href="Resources/Icons/Beatmaker icon 512x512.png">
     <link rel="apple-touch-icon" href="Resources/Icons/Beatmaker icon 512x512.png">
 </head>
+
 <body>
-    <div id="adOverlay"><div id="adBox">
-        <h1 style="color: var(--sharpYellow);font-weight: 900; font-family: 'Berkshire Swash';">Welcome to Beatmaker<br>
-            <span style="font-family: 'Roboto';font-size: 20px;">(by MMA)!</span></h1>
-        <span>
-            Making good beats here is a kid's play. Just tap on the pad lad!<br>(#IAmTheNewRapGod)<br><br>
-            This project is open-source, feel free to contribute on <a target="blank_" style="color: var(--sharpYellow);text-decoration: none;" href="https://github.com/mmaismma/beatmaker">GitHub</a>.
-        </span><br><br>
-        <button id="shareButton">SHARE</button>
-        <button id="installButton" style="display: none;">INSTALL APP</button><br><br>
-        <button id="adSkip" onclick="javascript: document.getElementById('adOverlay').style.display = 'none';">CONTINUE</button>
-    </div></div>
-    <div id="main">
-        <div class="tile red 01">
-            <div class="icon"></div>
-            <div class="title">Beat</div>
-        </div>
-        <div class="tile red 02">
-            <div class="icon"></div>
-            <div class="title">Kick</div>
-        </div>
-        <div class="tile yellow 16">
-            <div class="icon"></div>
-            <div class="title">Beep</div>
-        </div>
-        <div class="tile yellow 25">
-            <div class="icon"></div>
-            <div class="title">Bass</div>
-        </div>
-        <div class="tile cyan 29">
-            <div class="icon"></div>
-            <div class="title">Strings</div>
-        </div>
-        <div class="tile cyan 06">
-            <div class="icon"></div>
-            <div class="title">Chords</div>
-        </div>
-        <div class="tile red 28">
-            <div class="icon"></div>
-            <div class="title">Fullbeat</div>
-        </div>
-        <div class="tile red 04">
-            <div class="icon"></div>
-            <div class="title">Break</div>
-        </div>
-        <div class="tile yellow 44">
-            <div class="icon"></div>
-            <div class="title">Tesla</div>
-        </div>
-        <div class="tile yellow 32">
-            <div class="icon"></div>
-            <div class="title">Metal</div>
-        </div>
-        <div class="tile cyan 07">
-            <div class="icon"></div>
-            <div class="title">Bells</div>
-        </div>
-        <div class="tile cyan 08">
-            <div class="icon"></div>
-            <div class="title">Bubbles</div>
-        </div>
-        <div class="tile orange 11">
-            <div class="icon"></div>
-            <div class="title">Arp</div>
-        </div>
-        <div class="tile orange 12">
-            <div class="icon"></div>
-            <div class="title">Perc</div>
-        </div>
-        <div class="tile green 31">
-            <div class="icon"></div>
-            <div class="title">Stab</div>
-        </div>
-        <div class="tile green 18">
-            <div class="icon"></div>
-            <div class="title">Pad</div>
-        </div>
-        <div class="tile pink 21">
-            <div class="icon"></div>
-            <div class="title">KT0A</div>
-        </div>
-        <div class="tile pink 22">
-            <div class="icon"></div>
-            <div class="title">Fire</div>
-        </div>
-        <div class="tile orange 33">
-            <div class="icon"></div>
-            <div class="title">Burnout</div>
-        </div>
-        <div class="tile orange 09">
-            <div class="icon"></div>
-            <div class="title">H2L</div>
-        </div>
-        <div class="tile green 41">
-            <div class="icon"></div>
-            <div class="title">Shot</div>
-        </div>
-        <div class="tile green 35">
-            <div class="icon"></div>
-            <div class="title">Fx</div>
-        </div>
-        <div class="tile pink 47">
-            <div class="icon"></div>
-            <div class="title">Troop</div>
-        </div>
-        <div class="tile pink 24">
-            <div class="icon"></div>
-            <div class="title">Burn</div>
+    <div id="adOverlay">
+        <div id="adBox">
+            <h1 style="color: var(--sharpYellow);font-weight: 900; font-family: 'Berkshire Swash';">Welcome to
+                Beatmaker<br>
+                <span style="font-family: 'Roboto';font-size: 20px;">(by MMA)!</span></h1>
+            <span>
+                Making good beats here is a kid's play. Just tap on the pad lad!<br>(#IAmTheNewRapGod)<br><br>
+                This project is open-source, feel free to contribute on <a target="blank_"
+                    style="color: var(--sharpYellow);text-decoration: none;"
+                    href="https://github.com/mmaismma/beatmaker">GitHub</a>.
+            </span><br><br>
+            <button id="shareButton">SHARE</button>
+            <button id="installButton" style="display: none;">INSTALL APP</button><br><br>
+            <button id="adSkip"
+                onclick="javascript: document.getElementById('adOverlay').style.display = 'none';">CONTINUE</button>
         </div>
     </div>
+    <table id="main">
+        <tr>
+            <td>
+                <div class="tile red 01">
+                    <div class="icon"></div>
+                    <div class="title">Beat</div>
+                </div>
+            </tdv>
+            <td>
+                <div class="tile red 02">
+                    <div class="icon"></div>
+                    <div class="title">Kick</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile yellow 16">
+                    <div class="icon"></div>
+                    <div class="title">Beep</div>
+                </div>
+            </td>
+        
+            <td>
+                <div class="tile yellow 25">
+                    <div class="icon"></div>
+                    <div class="title">Bass</div>
+                </div>
+            </td>
+            <td class="tile cyan 29">
+                <div class="icon"></div>
+                <div class="title">Strings</div>
+            </td>
+            <td>
+                <div class="tile cyan 06">
+                    <div class="icon"></div>
+                    <div class="title">Chords</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="tile red 28">
+                    <div class="icon"></div>
+                    <div class="title">Fullbeat</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile red 04">
+                    <div class="icon"></div>
+                    <div class="title">Break</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile yellow 44">
+                    <div class="icon"></div>
+                    <div class="title">Tesla</div>
+                </div>
+            </td>
+        
+            <td>
+                <div class="tile yellow 32">
+                    <div class="icon"></div>
+                    <div class="title">Metal</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile cyan 07">
+                    <div class="icon"></div>
+                    <div class="title">Bells</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile cyan 08">
+                    <div class="icon"></div>
+                    <div class="title">Bubbles</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="tile orange 11">
+                    <div class="icon"></div>
+                    <div class="title">Arp</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile orange 12">
+                    <div class="icon"></div>
+                    <div class="title">Perc</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile green 31">
+                    <div class="icon"></div>
+                    <div class="title">Stab</div>
+                </div>
+            </td>
+        
+            <td>
+                <div class="tile green 18">
+                    <div class="icon"></div>
+                    <div class="title">Pad</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile pink 21">
+                    <div class="icon"></div>
+                    <div class="title">KT0A</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile pink 22">
+                    <div class="icon"></div>
+                    <div class="title">Fire</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="tile orange 33">
+                    <div class="icon"></div>
+                    <div class="title">Burnout</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile orange 09">
+                    <div class="icon"></div>
+                    <div class="title">H2L</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile green 41">
+                    <div class="icon"></div>
+                    <div class="title">Shot</div>
+                </div>
+            </td>
+        
+            <td>
+                <div class="tile green 35">
+                    <div class="icon"></div>
+                    <div class="title">Fx</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile pink 47">
+                    <div class="icon"></div>
+                    <div class="title">Troop</div>
+                </div>
+            </td>
+            <td>
+                <div class="tile pink 24">
+                    <div class="icon"></div>
+                    <div class="title">Burn</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+    </table>
     <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
     <script src="script.js"></script>
 </body>
