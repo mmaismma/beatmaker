@@ -3,7 +3,7 @@
     "short_name": "Beatmaker",
     "start_url": ".",
     "display": "fullscreen",
-    "orientation": "landscape",
+    "orientation": "any",
     "background_color": "#020202",
     "theme_color": "#fd9210",
     "description": "Easy beat/music maker.",
