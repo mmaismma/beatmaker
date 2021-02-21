@@ -101,7 +101,8 @@ main {
     width: 90vw;
     height: 90vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 7px;
     transition: transform 200ms linear;
 }
@@ -310,3 +311,10 @@ main > div {
 /*.red {
     background: linear-gradient(to right, transparent, #fffa 50%, transparent 52%), #cc303b;
 }*/
+
+@media (max-width: 475px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
